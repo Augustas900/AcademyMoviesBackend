@@ -7,10 +7,7 @@
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Configuration](#configuration)
-- [Running the Application](#running-the-application)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 This is a Spring Boot application that demonstrates how to integrate with MongoDB, a NoSQL database. The application provides a RESTful API to perform basic CRUD operations on a collection of documents. 
@@ -25,7 +22,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Augustas900/AcademyMoviesBackend
-   cd spring-boot-mongodb
+
 Build the project
 
 bash
@@ -47,28 +44,24 @@ HTTP Method	Endpoint	Description
 GET	/api/v1/movies	Retrieve all items
 GET	/{imdbId}	Retrieve an item by ID
 POST	/api/v1/reviews	Create a new item
+
 Configuration
 The application configuration can be found in the src/main/resources/application.properties file. Update the MongoDB URI and other settings as needed.
 
 properties
 spring.data.mongodb.uri=mongodb://localhost:27017/yourdatabase
 spring.application.name=Spring Boot MongoDB App
-Running the Application
-To run the application, execute the following command:
+
 
 bash
 mvn spring-boot:run
 By default, the application will start on port 8080. You can change this in the application.properties file.
 
-Testing
-To run the tests, use the following command:
 
 bash
 mvn test
 Ensure all tests pass before deploying.
 
-Contributing
-Contributions are welcome! Please follow these steps:
 
 Fork the repository.
 Create a new branch (git checkout -b feature/YourFeature).
